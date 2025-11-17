@@ -6,9 +6,11 @@
     <title>Weather API</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="bg-white backdrop-blur-md rounded-2xl shadow-2xl text-center w-[50%] p-6">
-        <h1 class="text-3xl font-bold text-gray-600 mb-6">Weather App</h1>
+<body background="bg.jpg">
+    <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-transparent text-center w-[50%] p-6">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">Weather App</h1>
         
         <input type="text" id="cityInput" placeholder="Enter Your City Name" class="bg-white text-blue-600 mt-4 px-5 py-2 text-center outline-none focuse:ring text-gray-400">
         
@@ -18,14 +20,20 @@
             <h2 id="cityName" class="text-2xl font-semibold"></h2>
             <p id="temperature" class="text-4xl font-bold mt-2"></p>
             <p id="condition" class="mt-2"></p>
-            <p id="humidity" class="mt-2"></p>
+            <p id="humidity" class="mt-2"></p><br><br>
+            <p>Thank You for Searching</p><br><br><br><br>
         </div>
         
         <div id="errorPopup" class="hidden opacity-100">
-           <p id="errorMessage">Something Went Wrong</p>
+           <p id="errorMessage">Sorry, Something Went Wrong</p>
         </div>
+        <footer class="bg-transparent text-black py-3 text-center mt-10">
+           <p>© 2025 | Created by <b>Jeyashree</b></p>
+        </footer>
+
     </div>
 
     <script src="WeatherScript.js"></script>
+</body>
 </body>
 </html>
